@@ -7,7 +7,7 @@ background: "/img/posts/machineLearning/linearReg/photo-1495592822108-9e6261896d
 
 ## Linear Regression
 
-    - the simples and most widely used statistical technique for predictive modeling.
-    - it is respresented mathematically as the following equation:
+    - is the simples and most widely used statistical technique for predictive modeling.
+    - is represented mathematically as in the following equation:
 
 ![LR](/img/posts/machineLearning/linearReg/SRL.png)

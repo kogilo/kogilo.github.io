@@ -23,7 +23,7 @@ import pylab as pl
 
 ```
 
-<h2> Read the Data</he>
+## Read the Data
 
 ```python
 import pandas as pd
@@ -34,14 +34,14 @@ df.describe()
 
 ```
 
-<h4>Convert labels R and M to 0 and 1</h4>
+## Convert labels R and M to 0 and 1
 
 ```python
 df[60]=np.where(df[60]=='R',0,1)
 ```
 
-<h4>Divide the dataset into training and test samples</h4>
-<h4>Separate out the x and y variable frames for the train and test samples</h4>
+- Divide the dataset into training and test samples
+- Separate out the x and y variable frames for the train and test samples
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -53,25 +53,14 @@ y_test = test[60]
 y_train
 ```
 
-<h2>Build the model and fit the training data</h2>
+## Build the model and fit the training data
 
 ```python
 model = linear_model.LinearRegression()
 model.fit(x_train,y_train)
 ```
 
-<h1>Interpreting categorical prediction results</h1>
-<h3>Precision
-<h3>Recall
-<h3>True Positive Rate
-<h3>False Positive Rate
-<h3>Precision recall curve
-<h3>ROC curve
-<h3>F-Score
-<h3>Area under PR curve
-<h3>Area under ROC curve
-
-<h4>Generate predictions in-sample error</h4>
+## Generate predictions in-sample error
 
 ```python
 training_predictions = model.predict(x_train)
